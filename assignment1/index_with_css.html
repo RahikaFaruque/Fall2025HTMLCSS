@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>the internet!</title>
+    <link rel="icon" type="image/x-icon" href="images/robot.png">
+    <style>
+        body {
+            font-family: 'Lucida Sans Unicode';
+            background-image: url(images/20240616_152128.jpg);
+            background-attachment: fixed;
+
+        }
+
+        #header-table {
+            background-color: rgba(255, 182, 193, 0.379);
+            margin: 40px -10px 0px -10px;
+            /*      top right bot left */
+            padding-right: 72px;
+            z-index: -1;
+        }
+
+        h1 {
+            text-transform: uppercase;
+            text-align: left;
+            font-size: 40px;
+            letter-spacing: 40px;
+            color: rgba(0, 0, 0, 0.783);
+            margin: 40px 70px 0px 60px;
+            /* border: thin solid black; */
+        }
+
+        h1:hover {
+            color: black;
+        }
+
+        #internet {
+            font-size: 150px;
+            letter-spacing: 25px;
+            /* border: thin solid black; */
+        }
+
+        #internet:hover {
+            color: transparent;
+            background-image: url(images/stars.gif);
+            background-clip: text;
+        }
+
+        img[src="images/examine.gif"] {
+            width: 20%;
+            position: absolute;
+            display: inline-block;
+            border: thick solid rgb(255, 119, 142);
+            margin-left: -25px;
+            z-index: 1;
+        }
+
+        .button {
+            text-transform: uppercase;
+            font-size: 30px;
+            font-weight: bold;
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.7);
+            background-image: linear-gradient(to left, #ffd4e7, #ebb8fa);
+            padding: 20px 30px 20px 830px;
+            display: inline-block;
+            position: absolute;
+            margin-left: -10px;
+            border-top: thick double white;
+            border-top-right-radius: 25px;
+        }
+
+        .button:hover {
+            text-decoration: underline;
+        }
+
+        .rainbow {
+            padding: 100px 21px;
+            opacity: 50%;
+        }
+
+        .rainbow:nth-child(6n+1) {
+            background-color: rgb(255, 117, 117);
+        }
+
+        .rainbow:nth-child(6n+2) {
+            background-color: rgb(255, 203, 106);
+        }
+
+        .rainbow:nth-child(6n+3) {
+            background-color: rgb(255, 255, 177);
+        }
+
+        .rainbow:nth-child(6n+4) {
+            background-color: rgb(170, 255, 170);
+        }
+
+        .rainbow:nth-child(6n+5) {
+            background-color: rgb(172, 172, 255);
+        }
+
+        .rainbow:nth-child(6n+6) {
+            background-color: rgb(212, 153, 255);
+        }
+
+        .rainbow:hover {
+            opacity: 100%;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        img[src="images/thumbs-up.gif"] {
+            width: 400px;
+            display: inline;
+            position: absolute;
+            margin-top: 100px;
+            margin-left: 560px;
+            z-index: -1;
+            padding: 10px 10px 60px 10px;
+            background-color: blanchedalmond;
+        }
+
+        p {
+            color: rgba(0, 0, 0, 0.906);
+            background-image: linear-gradient(to left, #ffd4e7, #ebb8fa);
+            background-attachment: fixed;
+            display: inline-block;
+            width: 400px;
+            margin: 0px -10px -8px -10px;
+            padding: 40px 60px;
+            font-size: 20px;
+            line-height: 28px;
+            letter-spacing: 7px;
+            text-align: justify;
+            font-weight: 50px;
+            /* opacity: 70%; */
+        }
+
+        #kaomoji{
+            position:absolute;
+            z-index: 1;
+            margin-left: 552px;
+            margin-top: -98px;
+        }
+
+        p a {
+            color: rgb(255, 79, 149);
+            letter-spacing: 10px;
+        }
+
+        p a:hover {
+            border-top: thin solid black;
+            border-bottom: thin solid black;
+        }
+
+        img[src="images/cat\ spinning.gif"]{
+            width: 150px;
+            position: absolute;
+            padding: 40px 20px;
+            margin-left: 540px;
+            margin-top: 80px;
+            border-radius: 50%;
+            background-image: linear-gradient(to bottom, #ffd4e7, #ebb8fa);
+        }
+
+        img[src="images/spinning\ fish.gif"]{
+            width: 150px;
+            position: absolute;
+            padding: 15px;
+            margin-left: 710px;
+            margin-top: 260px;
+            border-radius: 50%;
+            background-image: linear-gradient(to top, #ffd4e7, #ebb8fa);
+        }
+
+        img[src="images/cat\ spinning.gif"]:hover, img[src="images/spinning\ fish.gif"]:hover{
+            border-radius: 40px;
+        }
+
+        .hide {
+            display: none;
+            position: absolute;
+            border: thick solid rgb(255, 119, 142);
+            border-radius: 40px;
+            background-color:beige;
+        }
+
+        img[src="images/cat\ spinning.gif"]:hover+.hide, img[src="images/spinning\ fish.gif"]:hover+.hide,
+        .button:hover+.hide{
+            display: block;
+            position:absolute;
+            z-index: 1;
+        }
+
+    </style>
+</head>
+
+<body>
+    <table id="header-table">
+        <tr>
+            <td>
+                <h1>welcome to the <br><span id="internet">internet</span></h1>
+            </td>
+            <td>
+                <table style="width:100%; margin-left: 80px;">
+                    <tr>
+                        <td>
+                            <img src="images/robot.png" alt="robot emoji holding up rainbow emoji"
+                                style="width: 250px;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <details>
+                                <summary>
+                                    <img src="images/searchbar.png" alt="image of search bar"
+                                        style="width: 300px; margin-left: -42px;">
+                                </summary>
+                                <img src="images/examine.gif" alt="a bird plushie is being examined">
+                            </details>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <div href="aboutme.html" target="about me" class="button">about me</div>
+    <div class="hide" style="margin: 10px 0px 0px 600px; padding: 10px;">
+        <img src="images/self.png" 
+            alt="cartoon person pointing at self"
+            style="width:100px; margin-left: 20px;">
+        <br>Hi sir! Sorry for the<br>late submission!
+    </div>
+    <div
+        style="background-color: #ffd4e7; margin-right:-10px; padding: 43px; border-bottom: thick double white;
+        border-bottom-left-radius: 25px;">
+    </div>
+    <table style="margin: -2px -10px 0px -10px; background-color: wheat;">
+        <tr>
+            <td class="rainbow"></td>
+            <td class="rainbow"></td>
+            <td class="rainbow"></td>
+            <td class="rainbow"></td>
+            <td class="rainbow"></td>
+            <td class="rainbow"></td>
+            <td class="rainbow"></td>
+            <td class="rainbow"></td>
+            <td class="rainbow"></td>
+            <td class="rainbow"></td>
+            <td class="rainbow"></td>
+            <td class="rainbow"></td>
+            <td class="rainbow"></td>
+            <td class="rainbow"></td>
+            <td class="rainbow"></td>
+            <td class="rainbow"></td>
+            <td class="rainbow"></td>
+            <td class="rainbow"></td>
+            <td class="rainbow"></td>
+            <td class="rainbow"></td>
+            <td class="rainbow"></td>
+            <td class="rainbow"></td>
+            <td class="rainbow"></td>
+            <td class="rainbow"></td>
+            <td class="rainbow"></td>
+            <td class="rainbow"></td>
+            <td class="rainbow"></td>
+            <td class="rainbow"></td>
+            <td class="rainbow"></td>
+            <td class="rainbow"></td>
+            <td class="rainbow"></td>
+            <td class="rainbow"></td>
+            <td class="rainbow"></td>
+            <td class="rainbow"></td>
+        </tr>
+    </table>
+    <img src="images/thumbs-up.gif" alt="sitting at a computer and giving a thumbs up">
+    <p>
+        <a href="https://en.wikipedia.org/wiki/History_of_the_Internet" target="internet wiki">The Internet</a> 
+        came about after the United States Department of Defense made this thing called the <a
+        href="https://en.wikipedia.org/wiki/ARPANET" target="arpanet wiki">ARPANET</a> in 1969. It was for
+        universities. But now it's for all of us! Back then it was a bit harder to get to the website you
+        wanted. But ever since 1983, we have <a href="https://en.wikipedia.org/wiki/Domain_Name_System"
+        target="dns wiki">DNS</a>. It lets us just type in the <a href="https://en.wikipedia.org/wiki/URL"
+        target="url wiki">URL</a> we want! <span id="kaomoji">( ദ്ദി ˙ᗜ˙ )</span>
+    </p>
+    <img src="images/cat spinning.gif" alt="spinning cat">
+    <div class="hide" style="margin-left: 1244px; margin-top:-400px; padding:10px;">
+        I realized that the<br>cat video is a big<br>file. So this time<br>
+        I'm just focused on<br>this page.</div>
+    <img src="images/spinning fish.gif" alt="spinning fish">
+    <div class="hide" style="margin-left:1020px; margin-top:-220px; padding: 10px;">
+        I realized that the<br>fish video is a big<br>file. So this time<br>
+        I'm just focused on<br>this page.</div>
+</body>
+
+</html>
